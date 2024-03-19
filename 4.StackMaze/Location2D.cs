@@ -1,7 +1,4 @@
-﻿using System;
-using System.Data;
-
-// 2차원 위치를 나타내는 자료형.
+﻿// 2차원 위치를 나타내는 자료형.
 public class Location2D
 {
     // 행.
@@ -37,7 +34,6 @@ public class Maze
     // 생성자.
     public Maze()
     {
-        // Todo: 아직 작성 안함.
         // 파일에서 맵 읽어오기.
         ReadMap("Map.txt");
     }
@@ -57,6 +53,22 @@ public class Maze
         }
     }
 
+    // 전달된 위치가 이동 가능한 위치인지 판별하는 함수.
+    // row: 맵에서 탐색할 행 번호.
+    // col: 맵에서 탐색할 열 번호.
+    public bool IsValidLocation(int row, int col)
+    {
+        // 이동 불가능 판단.
+        // row나 col 값이 배열의 크기를 벗어나면 기본적으로 오류.
+        if (row < 0 || col < 0 || row >= size || col >= size)
+        {
+            return false;
+        }
+
+        // 이동 가능 판단. (탐색하지 않은 0이거나, 출구이거나).
+        return map[row, col] == '0' || map[row, col] == 'x';
+    }
+
     // 파일에서 맵을 읽어서 맵 데이터를 설정하는 함수.
     private void ReadMap(string path)
     {
@@ -64,6 +76,12 @@ public class Maze
 
         // 텍스트 파일을 라인으로 분리해서 읽어오기.
         string[] lines = File.ReadAllLines(path);
+
+        // 파일의 라인(줄) 수를 사용해서 2차원 맵 배열을 생성.
+        map = new char[lines.Length, lines.Length];
+
+        // 크기 설정.
+        Maze.size = lines.Length;
 
         // 라인 별로 파싱을 위해 루프 처리.
         int lineIndex = 0;
