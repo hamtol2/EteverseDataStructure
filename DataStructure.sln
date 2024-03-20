@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.Stack", "3.Stack\3.Stack.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.StackMaze", "4.StackMaze\4.StackMaze.csproj", "{3F26C305-66A9-4F8A-ACFE-FB28D7B8C2D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.LinkedList", "5.LinkedList\5.LinkedList.csproj", "{1BABE54C-B808-4EF4-9BF7-0668A06CA179}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.LinkedList", "5.LinkedList\5.LinkedList.csproj", "{1BABE54C-B808-4EF4-9BF7-0668A06CA179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.DoubleLinkedList", "6.DoubleLinkedList\6.DoubleLinkedList.csproj", "{1C7BD321-531C-4484-981B-66B3E06A42C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{1BABE54C-B808-4EF4-9BF7-0668A06CA179}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BABE54C-B808-4EF4-9BF7-0668A06CA179}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BABE54C-B808-4EF4-9BF7-0668A06CA179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C7BD321-531C-4484-981B-66B3E06A42C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C7BD321-531C-4484-981B-66B3E06A42C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C7BD321-531C-4484-981B-66B3E06A42C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C7BD321-531C-4484-981B-66B3E06A42C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
