@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.StackMaze", "4.StackMaze\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.LinkedList", "5.LinkedList\5.LinkedList.csproj", "{1BABE54C-B808-4EF4-9BF7-0668A06CA179}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.DoubleLinkedList", "6.DoubleLinkedList\6.DoubleLinkedList.csproj", "{1C7BD321-531C-4484-981B-66B3E06A42C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.DoubleLinkedList", "6.DoubleLinkedList\6.DoubleLinkedList.csproj", "{1C7BD321-531C-4484-981B-66B3E06A42C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.Queue", "7.Queue\7.Queue.csproj", "{29BF0DD0-1082-46EC-B573-348A63C2AF3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.Queue", "7.Queue\7.Queue.csproj", "{29BF0DD0-1082-46EC-B573-348A63C2AF3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.HashTable", "8.HashTable\8.HashTable.csproj", "{7319C8CA-BD68-4247-8CB7-15AF9997516F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{29BF0DD0-1082-46EC-B573-348A63C2AF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29BF0DD0-1082-46EC-B573-348A63C2AF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29BF0DD0-1082-46EC-B573-348A63C2AF3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7319C8CA-BD68-4247-8CB7-15AF9997516F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7319C8CA-BD68-4247-8CB7-15AF9997516F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7319C8CA-BD68-4247-8CB7-15AF9997516F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7319C8CA-BD68-4247-8CB7-15AF9997516F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
