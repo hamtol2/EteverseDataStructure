@@ -128,16 +128,18 @@ public class BinarySearchTree
                 // 위에서 구한 오른쪽 서브 트리에서 가장 작은 값을 가진 노드를 삭제.
                 node.Right = DeleteNodeRecursive(node.Right, node.Data);
             }
-
-            // 경우2 - 자식이 하나만 있는 경우 (둘 중 하나만 null인 경우).
-            if (node.Left == null)
+            else
             {
-                return node.Right;
-            }
+                // 경우2 - 자식이 하나만 있는 경우 (둘 중 하나만 null인 경우).
+                if (node.Left == null)
+                {
+                    return node.Right;
+                }
 
-            else if (node.Right == null)
-            {
-                return node.Left;
+                else if (node.Right == null)
+                {
+                    return node.Left;
+                }
             }
         }
 
@@ -216,7 +218,7 @@ public class BinarySearchTree
             InorderTraverseRecursive(node.Left);
 
             // 부모 노드 처리.
-            Console.WriteLine($"{node.Data} ");
+            Console.Write($"{node.Data} ");
 
             // 오른쪽 서브 트리를 중위 순회.
             InorderTraverseRecursive(node.Right);
